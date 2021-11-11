@@ -7,7 +7,7 @@
  
 ID2Name<-function(x, col.name="term_name"){
  #data("IDname")
-  if(!col.name %in% x){
+  if(!col.name %in% colnames(x)){
     stop("col.name: ",col.name," not found in x.")
   }
   if(col.name=="term_name"){
