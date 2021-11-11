@@ -6,7 +6,8 @@
 #' @export
  
 ID2Name<-function(x, col.name="term_name"){
-  if(!col.name %in% colnames(gpGeneSets::IDname)){
+ #data("IDname")
+  if(!col.name %in% x){
     stop("col.name not found in x.")
   }
   if(col.name=="term_name"){
