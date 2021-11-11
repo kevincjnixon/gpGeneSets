@@ -8,7 +8,7 @@
 ID2Name<-function(x, col.name="term_name"){
  #data("IDname")
   if(!col.name %in% x){
-    stop("col.name not found in x.")
+    stop("col.name: ",col.name," not found in x.")
   }
   if(col.name=="term_name"){
     message("output column will be 'term_name', changing 'term_name' to 'term_id'...")
